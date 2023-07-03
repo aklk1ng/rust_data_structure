@@ -11,6 +11,10 @@ name = "DoubleList"
 version = "0.1.0"
 
 [[package]]
+name = "Linked_List"
+version = "0.1.0"
+
+[[package]]
 name = "ListNode"
 version = "0.1.0"
 

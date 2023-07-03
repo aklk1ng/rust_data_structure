@@ -1,2 +1,2 @@
 [workspace]
-members = ["ListNode", "Stack", "Queue", "Binary_Tree", "DoubleList"]
+members = ["ListNode", "Stack", "Queue", "Binary_Tree", "DoubleList", "Linked_List"]

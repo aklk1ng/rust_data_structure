@@ -1,6 +1,9 @@
+use std::borrow::Borrow;
 use std::cell::RefCell;
+use std::fmt::Error;
 use std::rc::Rc;
 
+#[derive(Debug, PartialEq, Eq)]
 struct Node {
     val: i32,
     left: Option<Rc<RefCell<Node>>>,
@@ -17,8 +20,18 @@ impl Node {
     }
 }
 
+struct Tree {
+    root: Option<Rc<RefCell<Node>>>,
+}
+
+impl Tree {
+    fn new() -> Self {
+        Self { root: None }
+    }
+}
+
 fn test() {
-    let mut root = Node::new(0);
+    let mut root = Tree::new();
 }
 
 fn main() {
